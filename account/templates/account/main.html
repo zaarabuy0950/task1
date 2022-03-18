@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css">
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    <title>Document</title>
+    <style>
+       .row{
+            outline:8px solid #EFE6F3 ;
+            border-radius:2px;
+            margin-top: 40px;
+            margin-left:150px;
+            margin-right:30px;
+            width: 70%;
+        }
+        .column1{
+            width: 40%;
+            float: left;
+            height: 650px;
+            background-color: ghostwhite;
+
+        }
+        .column2{
+            width: 60%;
+            height: 650px;
+            float: left;
+            background-color: #361a6f;
+            background-position: 100%;
+            align-items: center;
+
+        }
+        fieldset2{
+            text-align: center;
+            margin-left: 105;
+        }
+        .form{
+            text-align: center;
+            margin: -20px 0 50px;
+        }
+        .section{
+            background-color: azure;
+            font-family: 'Montserrat', sans-serif;
+            margin: -20px 0 50px;
+        }
+        body{
+            background-color:#CECACF;
+        }
+        .dot {
+            cursor: pointer;
+            height: 7px;
+            width: 7px;
+            margin: 0 2px;
+            margin-top: 80px;
+            background-color:white;
+            border-radius: 50%;
+            display: inline-block;
+            transition: background-color 0.6s ease;
+          }
+
+          .active, .dot:hover {
+            background-color: #717171;
+          }
+
+        .button1 .tooltiptext {
+            visibility: hidden;
+            width: 350px;
+            background-color: white;
+            text-align: center;
+            border-radius: 6px;
+            padding: 5px 0;
+
+
+            position: absolute;
+            z-index: 1;
+          }
+          .button1:hover .tooltiptext {
+            visibility: visible;
+          }
+          .loader {
+            border: 16px solid grey;
+            border-radius: 50%;
+            border-right: 16px solid indigo;
+            border-top: 16px solid indigo;
+            border-bottom: 16px solid indigo;
+            margin-top:10px;
+            margin-left:30px;
+            width: 20px;
+            height: 20px;
+          }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="row" style="height: 650px;">
+        <div class="column1">
+            <fieldset style="margin-left: 10%; border: none;">
+                <i class="fas fa-moon" style="margin-top: 50px;color: indigo;"></i>&nbsp;fieldly
+                <br>
+                <br>
+                <br>
+                <h1>Log in</h1>
+                <p>Log in your data that you entered during <br> your registration.</p><br>
+                <label for="email">Your e-mail</label>
+                <br>
+                <input type="text" style="width: 70%; height: 30px;" placeholder="name@domain.com" name="email" id="email" required>
+                <br>
+                <br>
+                <label for="password">Password</label><br>
+                <input type="password"  placeholder="at least 8 characters" style="width: 70%;height: 30px; " name="password" id="passsword" required>
+                <br>
+                <br>
+                <label><input type="checkbox" name="logged in">keep me logged in</label>
+                <br>
+                <br>
+                <input type="submit" style="background-color: indigo;
+                color: white;
+                text-align: center;
+                border-radius: 6px;
+                padding: 16px 20px;
+                margin: 8px 0;
+                border: none;
+                cursor: pointer;
+                width: 70%;
+                opacity: 0.9;"
+                       value="Log in" >
+                <br>
+                <p style="margin-left: 12%;">Dont have an account? <a style="color: #351770;" class="btn"><strong>Sign up</strong></a></p>
+                <p style="margin-left: 22%;color: indigo;" ><strong>Forgot password?</strong> </p>
+            </fieldset>
+
+        </div>
+        <div class="column2">
+            <fieldset2 style="margin-left: 10%;">
+                <div class="section" style="width: 350px; height: 280px; margin-top: 70px; margin-left: 120px; border-radius: 5px;">
+                    <div class="form">
+                        <i class='fas fa-user-circle' style='font-size:48px;color:grey;margin-left: -190px;margin-top:20px;'></i><strong><p style="margin-top:-35px;font-size: 18px;">Frank Boehm</strong><br> Tenant</p>
+                        <i class="fa fa-envelope" style="margin-left:-35px;color:gray"></i> &nbsp;nadine.m@gmail.com
+
+                        <br>
+                        <br>
+                        <i class="fas fa-phone" style="margin-left:-75px;color:gray" ></i> +4987324 45 56
+                        <br>
+                        <br>
+                        <i class="fas fa-envelope-open" style="margin-left:-5px;color:gray" ></i>&nbsp; kathmandu 44, 98440089 </i></a>
+                        <br>
+                        <br>
+                        <button style=" border: none; cursor: pointer; width: 250px;
+                     height: 40px; color: rgb(184, 163, 163); border-radius: 8px; opacity: 0.9;" class="button1"> <b style="color: black;">Show details</b>
+                            <span class="tooltiptext" style="border-radius: 10px;">
+
+                        <div class="loader">
+                            <h2 style="margin-left: 70px; color: indigo;margin-top: -5px;"><strong> 9.743,00€</strong></h4>
+                                </div>
+                        <br>
+                                </p>
+                                <h4 style="color: black;margin-top: -30px;"><strong>Total receipts this month</strong> </h4>
+                        <br>
+                        <br>
+                        <p style="margin-left:-135px;color:black;font-size: 15px;">Assign Payment  ></p>
+
+
+                     </span>
+
+                        </button>
+                    </div>
+                </div>
+
+                <h5 style="color: aliceblue;"> <b> Keeping the overview </b></h5>
+                <p style="color: aliceblue;"> In the property overview,owners recieve <br>
+                    a transparent presentation of all revelant KPIs of the <br>
+                    individual prperty objects.
+                </p>
+
+
+                <div style="text-align:center">
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>
+                    <span class="dot" onclick="currentSlide(4)"></span>
+                </div>
+
+
+
+            </fieldset2>
+
+        </div>
+    </div>
+</div>
+</body>
+</html>
